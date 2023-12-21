@@ -9,7 +9,7 @@
 
     
     <!-- Google Maps API key !-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWUEp7aCtvKOFEHOeW4qDQUgxFcyUBW2U&libraries=places"async></script>
+    <script src="INSERT API KEY HERE"async></script>
 
     <h2>Explore Tampa Bay</h2>
   </head>
