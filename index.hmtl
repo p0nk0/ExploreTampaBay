@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Explore Tampa Bay</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    
+    <!-- Google Maps API key !-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWUEp7aCtvKOFEHOeW4qDQUgxFcyUBW2U&libraries=places"async></script>
+
+    <h2>Explore Tampa Bay</h2>
+  </head>
+
+
+  <body>
+    <script src="script.js"></script>
+
+    <!-- Column 1 !-->
+    <div id="row1">
+      <div id="column1">
+
+          <!-- Sort Section -->
+          <div class="sort">
+            Sort by
+            <div class="space"></div>
+            <button onclick="sortthestuff(6)">Name</button>
+            <button onclick="sortthestuff(2)">Cost</button>
+            <button onclick="sortthestuff(3)">Stars</button>
+          </div> 
+
+          <!-- Filter Section -->
+          <div class ="filter">
+            Filter by
+            <div class="space"></div>
+              <button onclick="resetFilters()">None</button>
+              <button onclick="filter('Alcohol')">Alcohol</button>
+              <button onclick="filter('Theme Park')">Theme Park</button>
+              <button onclick="filter('Shopping')">Shopping</button>
+              <button onclick="filter('Family Friendly')">Family Friendly</button>
+              <button onclick="filter('Recreation')">Recreation</button>
+              <button onclick="filter('Guided Tour')">Guided Tour</button>
+              <button onclick="filter('Historical')">Historical</button>
+              <button onclick="filter('Live Performance')">Live Performance</button>
+              <button onclick="filter('Wildlife')">Wildlife</button>
+              <button onclick="filter('Sports')">Sports</button>
+              <button onclick="filter('Mall')">Mall</button>
+              <button onclick="filter('Food')">Food</button>
+              <button onclick="filter('Museum')">Museum</button>
+          </div> 
+
+        <!-- Misc. Section -->
+          <div class="sort">
+            Miscellaneous
+            <div class="space"></div>
+            <button class="help" onclick="helpMenu()">Help</button>
+            <button onclick="back()">Back</button>
+            <button onclick="next()">Next</button>
+            <button onclick="ascending()" id="funnybutton">Ascending</button>
+            <button onclick="getdistance()" id="dir">Directions</button>
+          </div>
+       
+      </div>
+
+      <!-- Column 2 -->
+      <div id="column2">
+        <div class="space"></div>
+      </div>
+
+      <!-- Column 3 -->
+      <div id="column3">
+        <input class="text" id="text1" name="text1" placeholder="Enter location">
+        <div id="map">MAP</div>
+      </div>
+      
+    </div>
+
+    <div class='parent'>
+      <div id="left-col" class='child inline-block-child'>
+
+        <script>
+          update()
+        </script>
+        
+      </div>
+
+  </div>
+
+    <!-- Google Maps API key !-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyxmS_vE-Z0q1J--pE9v6jmTybW01nfPM&callback=initMap&libraries=&v=weekly" async></script>
+
+  </body>
+
+
+</html>
